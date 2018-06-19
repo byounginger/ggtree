@@ -7,9 +7,6 @@ library(ggtree)
 library(geiger)
 library(tidytree)
 
-
-setwd("/Users/brett/Documents/Catenasporaceae/R")
-
 tree1 <- read.beast("T8.tre")
 ggtree(tree1) + geom_tiplab() + geom_text(aes(label = bootstrap))
 tree1
